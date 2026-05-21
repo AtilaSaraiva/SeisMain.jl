@@ -1,6 +1,6 @@
 println("Testing test_bin.jl")
 
-download_if_needed("https://saigfileserver.physics.ualberta.ca/static/Datasets/Testing/prestack_section.su", "section.su", sha256sum="8baaf281a36dcd5656e07e728bf97e0c1b513302b12206efbb24c3edb34d9ec8");
+download_if_needed("https://saigfileserver.physics.ualberta.ca/backend/downloads/datasets/Testing/prestack_section.su", "section.su", sha256sum="8baaf281a36dcd5656e07e728bf97e0c1b513302b12206efbb24c3edb34d9ec8");
 
 SegyToSeis("section.su","section",format="su",input_type="ieee");
 
